@@ -1,0 +1,111 @@
+body {
+    background-image: url("../images/yellow_background.png");
+    background-color: #AACCAA;
+}
+
+/*div.view-image img {
+    width:1204px;
+    height: 282px;
+}*/
+div.author-content {
+        background-color: #AAAAAA;
+        color: white;
+        float: left;
+        height: 266px;
+        width: 25%;
+}
+
+div.division {
+        background-image: url("../images/line.png");
+        background-repeat: repeat-x;
+        padding: 6px;
+}
+div.main-start {
+        border: 6px solid red;
+        margin-top: 20px;
+        float: left;
+        clear: left;
+}
+
+div.main-content-section {
+    border: 2px dashed black;
+    width: 70%;
+    float: left;
+}
+    
+div.para-content-section {
+        border: 2px solid black;
+        padding-right: 5px;
+        width: 900px;
+}
+
+div.para-content-section p {
+        padding-right: 5px;
+        text-align: justify;
+        font-style: oblique;
+}
+
+div.view-image {
+    /*height: 200px;*/
+    /*width:1204px;*/
+    background-image: url("../images/sanfrancisco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+div.view-image-top {
+    height: 150px;
+    width: 100%;
+}
+
+div.view-image-bottom {
+    background-color: rgba(0,0,0,.6);
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+}
+div.view-image-bottom span {
+        color: white;
+}   
+div.view-image-bottom input[type="button"] {
+    background-color: #CC0066;
+    border-radius: 5px;
+    color: #FFFFFF;
+    float: right;
+    margin-top: 16px;
+    margin-right: 30px;
+    	
+}
+ .header-menu {
+     padding: 5px;
+ }
+ 
+.header-menu nav {
+    float: right;
+    margin-left: 5px;
+}
+
+.header-menu nav a{
+    padding: 10px;
+}
+
+.logo-name {
+    font-family: cursive;
+    font-size: 50px;
+    
+}
+
+.logo-name {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+ul {
+    font-size: 10px;
+}
+.main-container {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
