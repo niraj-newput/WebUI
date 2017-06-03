@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ng Class Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="classstyle.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="ngclass.js"> </script>
+  </head>
+  <body ng-app="ngdemo">
+    <div >
+      <p class="dir "></p>
+      <p ng-class="style" > Use ng-class String </p>
+      <input type="text" placeholder="type class name" ng-model="style"/>
+      
+      <p ng-class="[classone, classtwo]"> Use ng-class Array </p>
+      <input type="text" placeholder="type class name" ng-model="classone"/>
+      <input type="text" placeholder="type class name" ng-model="classtwo"/>
+      
+      <p ng-class="{bold :boldclass, italic:italicclass}"> Use ng-class Object </p>
+      <input type="checkbox" placeholder="type class name" ng-model="boldclass"/>Bold Class <br/>
+      <input type="checkbox" placeholder="type class name" ng-model="italicclass"/>Italic Class <br/>
+      
+      <p ng-class="stylecon == 'bold' ? 'bold': 'italic'" > Use ng-class conditionally </p>
+      <input type="text" placeholder="type class name" ng-model="stylecon"/>
+      
+      <p ng-class="selected" class="animated"> Use ng-class Animation </p>
+      <select ng-model="selected">
+        <option value="fadeIn">fadeIn</option>
+        <option value="zoomIn">ZoomIn</option>
+        <option value="bounce">bounce</option>
+      </select>
+    </div>
+  </body>
+</html>

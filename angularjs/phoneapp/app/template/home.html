@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-2">
+    <div>
+      <label>Search</label>
+      <input type="text" class="form-control" />
+    </div>
+    <div >
+      <label class="label-control">Sort By:
+        <select class="btn btn-default" >
+          <option value="age">Newest
+          </option>
+          <option value="name">Alphabetical
+          </option>
+          <option value="100">price
+          </option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="col-md-10" >
+    <ul ng-repeat="phone in phones |filter: query | orderBy : order ">
+      <li class="list-item">
+        <div class="row">
+          <div class="col-md-2">
+            <a href="#/phones/{{phone.id}}"><img class="phone-img" src="app/{{phone.imageUrl}}" alt="{{phone.name}}"></img></a>
+          </div>
+          <div class="col-md-10">
+            <a href="#/phones/{{phone.id}}"> {{phone.name}}</a></br>
+            <p>{{phone.snippet}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

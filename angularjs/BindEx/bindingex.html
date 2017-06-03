@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>binding in component</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="bindex.js"></script>
+  </head>
+  <body ng-app="bind" >
+    <div ng-controller="bindController as ctrl" >
+      <h3>Two way data binding</h3>
+      <div>
+        <h4>parent</h4>
+        <p> object : {{ctrl.obj}}</p>
+        <p> string value : {{ctrl.string}}</p>
+      </div>
+      <bind-data data="ctrl.obj" strr="ctrl.string"></bind-data>
+      <p>My Name</p>
+      <input type="text" placeholder="type a class name" ng-model="style"/>
+    </div>
+  </body>
+</html>

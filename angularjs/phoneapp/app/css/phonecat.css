@@ -1,0 +1,49 @@
+.body {
+  font-family: Helvetica Neue;
+}
+.big-img {
+  padding: 50px 0px;
+}
+
+.phone-list {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.phone-img {
+  height: 100px;
+  width: 100px;
+}
+
+.list-item {
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.phone-heading {
+  padding: 20px 60px;
+}
+
+.img-section img{
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+}
+.phone-details ul {
+    list-style-type: none;
+}
+
+.phone-details li {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+.phone-details  li  span {
+  font-size: 16px;
+  font-weight: bold;
+}

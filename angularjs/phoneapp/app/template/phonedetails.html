@@ -1,0 +1,106 @@
+<div class="row ">
+  <div class="col-sm-4 big-img ">
+    <img class="animated fadeInUp" src="app/{{img}}"/>
+  </div>
+  <div class="col-sm-8">
+    <div class="row phone-heading">
+      <div class="col-sm-12">
+        <h1>{{phonesDetails['id']}}</h1>
+        <p> {{phonesDetails['description']}}</p>
+        <div class="img-section " >
+          <a > <img src="app/{{phonesDetails['images'][$index]}}" ng-repeat="imgsrc in phonesDetails['images']" ng-click="setImg(imgsrc)"/> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row phone-details" >
+  <ul >
+    <li>
+      <span>Availability and Networks</span>
+      <dl>
+        <dt>Availability</dt>
+        <dd ng-repeat="item in phonesDetails['availability']">{{item}}</dd>
+      </dl>
+    </li>
+    <li>
+      <span>Battery</span>
+      <dl  >
+        <div ng-repeat="(x,y) in phonesDetails['battery']">
+          <dt>{{x}}</dt>
+          <dd>{{y}}</dd>
+        </div>
+      </dl>
+    </li>
+    <li>
+      <span> Storage and Memory</span>
+      <dl  >
+        <div ng-repeat="(x,y) in phonesDetails['storage']">
+          <dt>{{x}}</dt>
+          <dd>{{y}}</dd>
+        </div>
+      </dl>
+    </li>
+    <li>
+      <span> Connectivity</span>
+      <dl  >
+        <div ng-repeat="(x,y) in phonesDetails['connectivity']">
+          <dt>{{x}}</dt>
+          <dd>{{y}}</dd>
+        </div>
+      </dl>
+    </li>
+    <li>
+      <span> Android</span>
+      <dl  >
+        <div ng-repeat="(x,y) in phonesDetails['android']">
+          <dt>{{x}}</dt>
+          <dd>{{y}}</dd>
+        </div>
+      </dl>
+    </li>
+    <li>
+      <span> Size and Weight</span>
+      <dl  >
+        <div ng-repeat="(x,y) in phonesDetails['sizeAndWeight']">
+          <dt>{{x}}</dt>
+          <dd>{{y}}</dd>
+        </div>
+      </dl>
+    </li>
+    <li>
+      <span> Display</span>
+      <dl  >
+        <div ng-repeat="(x,y) in phonesDetails['display']">
+          <dt>{{x}}</dt>
+          <dd>{{y}}</dd>
+        </div>
+      </dl>
+    </li>
+    <li>
+      <span> Hardware</span>
+      <dl  >
+        <div ng-repeat="(x,y) in phonesDetails['hardware']">
+          <dt>{{x}}</dt>
+          <dd>{{y}}</dd>
+        </div>
+      </dl>
+    </li>
+    <li>
+      <span> Camera</span>
+      <dl  >
+        <div ng-repeat="(x,y) in phonesDetails['camera']">
+          <dt>{{x}}</dt>
+          <dd>{{y}}</dd>
+        </div>
+      </dl>
+    </li>
+    <li>
+      <span>Additional Features</span>
+      <dl>
+        <dt></dt>
+        <dd>{{phonesDetails['additionalFeatures']}}</dd>
+      </dl>
+    </li>
+  </ul>
+</div>

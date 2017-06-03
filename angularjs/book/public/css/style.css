@@ -1,0 +1,120 @@
+.book-section {
+  background-color: #e0d3c0;
+  padding: 15px 0px 0px 15px;
+  font-size: 16px;
+}
+
+.btn-section {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: space-around;
+}
+
+.btn-print {
+  background-color: #ed1212;
+}
+
+.btn-view {
+  background-color: #b7b5b0;
+}
+
+.btn-like {
+  background-color: #c2f94a;
+}
+    
+.description {
+  border-top: 1px solid #e0dbc0;
+  border-bottom: 1px solid #e0dbc0;
+  color: #bcb8af;
+  font-size: 12px;
+  height: 60px;
+  overflow: hidden;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #d6fc7e;
+  height: 50px;
+  text-align: center;
+}
+
+.footer span{
+  font-size: 30px;
+  line-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+} 
+.heading {
+  height: 30px;
+  overflow-y: hidden;
+  text-align: center;
+  margin: 10px;
+}
+
+.header {
+  background-color: #b6ff19;
+}
+
+.img img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu {
+  font-size: 25px;
+  margin: 20px;
+  text-align: center;
+}
+
+menu li {  
+  padding: 20px;
+}
+
+.tile {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(255,255,200,.6);
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  /*height: 450px;*/
+  height: 400px;
+  margin: 15px;
+  padding: 0px;
+}
+
+.tile-img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 230px;
+}
+
+/* Modal Style CSS*/
+
+.book-img {
+  float: left;
+  padding: 10px 5px;  
+}
+
+.book-details {
+  padding: 10px 5px;
+}
+
+.modal-footer {
+  clear: both;
+}
+
+.navigation-btn {
+  clear: both;
+  text-align: center;
+}
+.linkDisabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}

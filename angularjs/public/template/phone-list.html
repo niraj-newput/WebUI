@@ -1,0 +1,13 @@
+<ul ng-repeat="phone in phones |filter: query | orderBy : order ">
+  <li class="list-item">
+    <div class="row">
+      <div class="col-md-2">
+        <a href="#/phones/{{phone.id}}"><img class="phone-img" src="{{phone.imageUrl}}" alt="{{phone.name}}"></img></a>
+      </div>
+      <div class="col-md-10">
+        <a> {{phone.name}}</a></br>
+        <p>{{phone.snippet}}</p>
+      </div>
+    </div>
+  </li>
+</ul>
